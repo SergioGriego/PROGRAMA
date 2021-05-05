@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="182.0" layoutY="14.0" text="Método Gauss-Seidel">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="173.0" text="Iteración">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="173.0" text="x">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="173.0" text="y">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="173.0" text="z">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="172.0" text="Di(tol)">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="99.0" text="Tolerancia">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tol" layoutX="182.0" layoutY="99.0" prefHeight="25.0" prefWidth="50.0" promptText="ej. 0.01" />
+      <TextField fx:id="i0" disable="true" layoutX="83.0" layoutY="209.0" prefHeight="25.0" prefWidth="50.0" promptText="0" text="0" />
+      <TextField layoutX="169.0" layoutY="209.0" prefHeight="25.0" prefWidth="50.0" promptText="x" fx:id="x0" />
+      <TextField fx:id="y0" layoutX="249.0" layoutY="209.0" prefHeight="25.0" prefWidth="50.0" promptText="y" />
+      <TextField fx:id="z0" layoutX="335.0" layoutY="209.0" prefHeight="25.0" prefWidth="50.0" promptText="z" />
+      <TextField fx:id="d0" layoutX="422.0" layoutY="208.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" />
+      <TextField fx:id="i1" disable="true" layoutX="83.0" layoutY="249.0" prefHeight="25.0" prefWidth="50.0" promptText="1" text="1" visible="false" />
+      <TextField disable="true" layoutX="169.0" layoutY="249.0" prefHeight="25.0" prefWidth="50.0" promptText="x" visible="false" fx:id="x1" />
+      <TextField fx:id="y1" disable="true" layoutX="249.0" layoutY="249.0" prefHeight="25.0" prefWidth="50.0" promptText="y" visible="false" />
+      <TextField fx:id="z1" disable="true" layoutX="335.0" layoutY="249.0" prefHeight="25.0" prefWidth="50.0" promptText="z" visible="false" />
+      <TextField fx:id="d1" disable="true" layoutX="422.0" layoutY="248.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" visible="false" />
+      <TextField fx:id="i2" disable="true" layoutX="83.0" layoutY="288.0" prefHeight="25.0" prefWidth="50.0" promptText="2" text="2" visible="false" />
+      <TextField disable="true" layoutX="169.0" layoutY="288.0" prefHeight="25.0" prefWidth="50.0" promptText="x" visible="false" fx:id="x2" />
+      <TextField fx:id="y2" disable="true" layoutX="249.0" layoutY="288.0" prefHeight="25.0" prefWidth="50.0" promptText="y" visible="false" />
+      <TextField fx:id="z2" disable="true" layoutX="335.0" layoutY="288.0" prefHeight="25.0" prefWidth="50.0" promptText="z" visible="false" />
+      <TextField fx:id="d2" disable="true" layoutX="422.0" layoutY="287.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" visible="false" />
+      <TextField fx:id="i3" disable="true" layoutX="83.0" layoutY="328.0" prefHeight="25.0" prefWidth="50.0" promptText="3" text="3" visible="false" />
+      <TextField disable="true" layoutX="169.0" layoutY="328.0" prefHeight="25.0" prefWidth="50.0" promptText="x" visible="false" fx:id="x3" />
+      <TextField fx:id="y3" disable="true" layoutX="249.0" layoutY="328.0" prefHeight="25.0" prefWidth="50.0" promptText="y" visible="false" />
+      <TextField fx:id="z3" disable="true" layoutX="335.0" layoutY="328.0" prefHeight="25.0" prefWidth="50.0" promptText="z" visible="false" />
+      <TextField fx:id="d3" disable="true" layoutX="422.0" layoutY="327.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" visible="false" />
+      <TextField fx:id="i4" disable="true" layoutX="83.0" layoutY="366.0" prefHeight="25.0" prefWidth="50.0" promptText="4" text="4" visible="false" />
+      <TextField disable="true" layoutX="169.0" layoutY="366.0" prefHeight="25.0" prefWidth="50.0" promptText="x" visible="false" fx:id="x4" />
+      <TextField fx:id="y4" disable="true" layoutX="249.0" layoutY="366.0" prefHeight="25.0" prefWidth="50.0" promptText="y" visible="false" />
+      <TextField fx:id="z4" disable="true" layoutX="335.0" layoutY="366.0" prefHeight="25.0" prefWidth="50.0" promptText="z" visible="false" />
+      <TextField fx:id="d4" disable="true" layoutX="422.0" layoutY="365.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" visible="false" />
+      <TextField fx:id="i5" disable="true" layoutX="83.0" layoutY="405.0" prefHeight="25.0" prefWidth="50.0" promptText="5" text="5" visible="false" />
+      <TextField disable="true" layoutX="169.0" layoutY="405.0" prefHeight="25.0" prefWidth="50.0" promptText="x" visible="false" fx:id="x5" />
+      <TextField fx:id="y5" disable="true" layoutX="249.0" layoutY="405.0" prefHeight="25.0" prefWidth="50.0" promptText="y" visible="false" />
+      <TextField fx:id="z5" disable="true" layoutX="335.0" layoutY="405.0" prefHeight="25.0" prefWidth="50.0" promptText="z" visible="false" />
+      <TextField fx:id="d5" disable="true" layoutX="422.0" layoutY="404.0" prefHeight="25.0" prefWidth="50.0" promptText="Di(tol)" visible="false" />
+      <Button fx:id="b1" layoutX="506.0" layoutY="208.0" mnemonicParsing="false" onAction="#calcularSig1" prefHeight="25.0" prefWidth="71.0" text="Siguiente">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="b2" disable="true" layoutX="506.0" layoutY="249.0" mnemonicParsing="false" onAction="#calcularSig2" prefHeight="25.0" prefWidth="71.0" text="Siguiente" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="b3" disable="true" layoutX="506.0" layoutY="287.0" mnemonicParsing="false" onAction="#calcularSig3" prefHeight="25.0" prefWidth="71.0" text="Siguiente" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="b4" disable="true" layoutX="506.0" layoutY="327.0" mnemonicParsing="false" onAction="#calcularSig4" prefHeight="25.0" prefWidth="71.0" text="Siguiente" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="b5" disable="true" layoutX="506.0" layoutY="366.0" mnemonicParsing="false" onAction="#calcularSig5" prefHeight="25.0" prefWidth="71.0" text="Siguiente" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="b6" disable="true" layoutX="506.0" layoutY="404.0" mnemonicParsing="false" onAction="#calcularSig6" prefHeight="25.0" prefWidth="71.0" text="Siguiente" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="343.0" layoutY="75.0" text="3x - 0.1y - 0.2z = 7.85 ">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="100.0" text="0.1x + 7y - 0.3z = -19.3 ">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="125.0" text="0.3x - 0.2y + 10z = 71.4">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
